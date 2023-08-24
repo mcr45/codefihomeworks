@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    font-family: 'Courier New', Courier;
+    background-color:  rgb(241, 26, 123);
+    display: flex;
+    flex-direction: column;
+}
+body > *{ box-sizing: border-box;}
+header{
+    color:rgb(3, 49, 164);
+    padding: 10px;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+h1, nav{
+    margin-bottom: 35px;
+}
+main{
+    padding: 30px;
+    color:  rgb(255, 229, 173);
+}
+main > * {
+    box-sizing: border-box;
+}
+.about, .projects {
+float: left;
+}
+.contact{
+    float: right;
+}
+.about, .contact {
+    width: 25%;
+}
+.projects{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+    padding: 10px;
+}
+.projects img{
+    max-width: 100%;
+    height: auto;
+}
+footer{
+    clear: both;
+    color: rgb(62, 0, 31);
+    padding: 30px;
+    text-align: center;
+}
+.about img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 55px;
+    border:solid rgb(116, 5, 114) 1px
+}
+
+.contact a {
+    text-decoration: none;
+    color:inherit;
+}
+
+
+@media screen and( max-width:768px) and (min-width:481px){
+
+
+    .about, .contact{
+        width: 33%;
+    }
+    .projects {
+        width: 34%;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    main{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    main section{
+        width: 100%;
+    }
+   .projects{
+    display: grid;
+    grid-template-columns:  auto 30%;
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+    padding: 10px;
+   }
+    #img-1, #img-2, #img-3{
+        grid-column: 2;
+    }
+    #img-1+p, #img-2+p, #img-3+p{ grid-column: 1;}
+    #img-1+p{grid-row: 1;}
+    #img-2+p{grid-row: 2;}
+    #img-3+p{grid-row: 3;}
+    
+}

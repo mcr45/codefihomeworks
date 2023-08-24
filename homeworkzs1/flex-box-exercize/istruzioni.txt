@@ -1,0 +1,55 @@
+Objective: Design a responsive photo gallery utilizing Flexbox to ensure an adaptive layout across various screen sizes.
+
+Instructions: Setup: Create a new folder called flexbox-exercise. Within this folder, establish two files: index.html and styles.css.
+
+HTML Structure: In index.html, set up the following:
+
+    A <header> with the title "Flexbox Photo Gallery".
+    A <main> section with a class of .gallery.
+    Inside the .gallery, insert nine <div> elements with the class .photo-card. Each .photo-card should contain:
+        An <img> displaying a photo of your choice.
+        A <h3> with a fictional photo title.
+        A <p> with a short description of the photo.
+
+Base Styling:
+
+    Link your styles.css to your HTML.
+
+Implement the following basic styles:
+
+    A cohesive color palette.
+    Margins and padding for a polished appearance.
+    A universal font from Google Fonts for consistency.
+
+Flexbox Implementation:
+
+    Convert .gallery into a Flex container.
+    By default, .photo-card elements should be displayed in a row format. Allow wrapping so they can shift to a 
+    new line if there's not enough space.
+    Space out the .photo-card elements evenly and align them to the center of the .gallery container.
+
+Responsive Design:
+
+    On wider screens (greater than 900px):
+        Display the .photo-card elements in three rows, each row containing three photos.
+    On medium screens (between 600px and 900px):
+        Display the .photo-card elements in three rows, each row containing two photos and the last row containing just one photo.
+    On smaller screens (less than 600px):
+        Display each .photo-card in its row.
+
+Extra Features (for added challenge):
+
+    Make the photos grow slightly when hovered upon.
+    Implement a quick transition effect for hover effects.
+    Display the .photo-card details (title and description) in a neat overlay when the photo is hovered upon.
+
+Test:
+
+    View your gallery in different browsers and adjust the screen size to verify that the Flexbox layout is responsive.
+    Optionally, try using browser dev tools to emulate various devices.
+
+Tips:
+
+    Remember to use flex-wrap: wrap on the .gallery to ensure .photo-card elements can break onto the next line.
+    Use flex: 1 on .photo-card elements to make them grow and occupy available space.
+    To enhance the challenge, consider introducing nested Flex containers within the .photo-card for the title, image, and description layout.

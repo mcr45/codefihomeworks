@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(217, 176, 183);
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: dimgrey;
+}
+
+.column {
+  background-color: darkmagenta;
+}
+
+footer {
+  background-color: forestgreen;
+  clear: both;
+}
+
+.services,
+.testimonials {
+  width: 25%;
+  padding: 20px;
+}
+main {
+  display: flex;
+}
+
+.main-content {
+  width: 50%;
+  padding: 20px;
+}
+
+.services,
+.main-content {
+  float: left;
+}
+.testimonials {
+  float: right;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+/* .client{
+    flex-basis: 30%;
+    width: 30%;
+} */
+.client img {
+  width: 35px;
+  border-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    margin: 0;
+  }
+  header {
+    width: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .column,
+  .main-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+  }
+}

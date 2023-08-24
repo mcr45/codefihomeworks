@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: rgb(255, 176, 127);
+    font-family: 'Caveat', cursive;}
+    h1{
+        color: rgb(243, 21, 89);
+        text-align: center;
+    }
+    h3{
+        color:rgb(255, 82, 162)
+    }
+    p{
+        color: #4D3C77;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+    main > * {
+        box-sizing: border-box;
+    }
+    .photo-card{
+        width: 30%;
+        height: auto;
+        
+    }
+    .photo-card img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 35px;
+    }
+
+    @media screen and (min-width:900px){
+        body{
+            font-size: 1.5rem;
+            font-family: 'Bricolage Grotesque', sans-serif;
+
+        }
+
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            padding: 35px;
+           justify-items: center;
+        }
+        .photo-card img{
+            max-width: 100%;
+            border-radius: 25px;
+        }
+
+    }
+
+    @media screen and (max-width:900px) and (min-width:600px){
+        body{
+            font-size: 1.5rem;
+            font-family: 'Caveat', cursive;
+
+        }
+
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,1fr);
+            padding: 35px;
+           justify-items: center;
+        }
+    }
+
+    @media screen and (max-width:600px){
+
+        body{
+            font-size: 1.7rem;
+            font-family: 'Black Ops One', cursive;
+font-family: 'Bricolage Grotesque', sans-serif;
+        }
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+
+    }

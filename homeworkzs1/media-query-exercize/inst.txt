@@ -1,0 +1,50 @@
+Objective: Build a fictional online portfolio website that's responsive using media queries.
+ The portfolio should display differently on desktop, tablet, and mobile devices.
+
+Instructions: Setup: Create a new folder named media-query-exercise. Inside this folder, create two files: index.html and styles.css.
+
+HTML Structure:
+
+    A <header> with the title "John Doe's Portfolio" and a navigation bar with links: About, Projects, and Contact.
+    Three <section> elements with the classes .about, .projects, and .contact.
+    A <footer> mentioning "© 2023 John Doe".
+
+Basic Styling:
+
+    Link your styles.css in your HTML.
+
+Add base styles:
+
+    Use a clean, readable font from Fonts.
+    Define a pleasant color scheme for your site.
+    Style the header, sections, and footer with padding and margins for a clean look.
+
+Desktop Layout:
+
+    By default (for desktops/large screens):
+    .about and .contact sections should take up 25% of the container's width and float to the left and right respectively.
+    .projects section should take up 50% of the container's width and float in the middle.
+
+Populate Content:
+
+    Inside the .about section, include a short biography and a profile picture.
+    For the .projects, list down at least 3 fictional projects with images and brief descriptions.
+    In the .contact section, place fictional contact details or a contact form.
+
+Media Queries:
+
+    For tablets (screen widths from 481px to 768px):
+        Change the .about and .contact sections to occupy 33% of the container's width.
+        The .projects section should now be 34% wide.
+    For mobile devices (screen widths up to 480px):
+        Each section should occupy 100% of the container's width and should stack on top of one another.
+
+Test:
+
+    View your website in a browser and adjust the screen size to see how your media queries alter the layout.
+
+Tips:
+
+    Clear floats after sections to avoid layout breakages.
+    Ensure that images are responsive, using max-width: 100% and height: auto.
+    For added challenge, make the navigation bar responsive too – maybe converting it into a dropdown for mobile devices.
